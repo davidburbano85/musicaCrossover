@@ -1,0 +1,30 @@
+<div class="containercancion">
+  <div class="derCanciones">
+    <h2>lista de Video</h2>
+    <div class="entrada">
+      <input
+        type="text"
+        placeholder="Nueva cancion"
+        [(ngModel)]="nuevaCancion"
+      />
+
+      <button (click)="agregarCancion()" class="boton agregar">agregar</button>
+    </div>
+    <div class="salida">
+      <ul *ngIf="listaCanciones">
+        @for(cancion of listaCanciones; track $index ){
+        <li>
+          <h1>cancion faltante {{ $index + 1 }}</h1>
+          <!-- {{ cancion }}      -->
+          <button (click)="eliminarCancion($index)" class="boton eliminar">
+            Eliminar {{ $index + 1 }}
+          </button>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+<div>
+
+</div>
+</div>

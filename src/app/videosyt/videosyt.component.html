@@ -1,0 +1,29 @@
+<div class="cajaVideo">
+  <div class="tituloVideo">
+    <h1>Tus Videos!!!</h1>
+  </div>
+  <div class="youtubeR">
+    <youtube-player [videoId]="youtubeId[aumentarindex]"> </youtube-player>
+    <div class="divBtn">
+      <button class="botones" (click)="anteriorVideo()">Anterior</button>
+      <button class="botones" (click)="siguienteVideo()">Siguiente</button>
+
+    </div>
+  </div>
+  <div class="muestra">
+    @for (muestra of youtubeId; track $index) {
+    <!-- <youtube-player
+      videoId="{{ muestra }}"
+      suggestedQuality="highres"
+      [height]="150"
+      [width]="150"
+      [startSeconds]="4"
+      [endSeconds]="8"
+      >></youtube-player >-->
+  
+      
+    }
+  </div>
+</div>
+
+    
