@@ -1,0 +1,21 @@
+<div class="cajaVideo"> 
+  <div class="youtubeR">
+    <div class="tituloVideo">
+      <h1>Tus Videos</h1>
+    </div>
+    <!-- @for (item of youtubeId; track $index) {
+      estes es{{item | json}}
+    } -->
+
+    @if (listaCanciones) {
+    <youtube-player [videoId]="linksVideos[aumentarindex]"> </youtube-player>
+    <!-- <youtube-player videoId="EtZ4LRr9mQ8"> </youtube-player> -->
+
+    }
+    <div class="divBtn">
+      <button class="botones" (click)="anteriorVideo()">Anterior</button>
+      <button class="botones" (click)="siguienteVideo()">Siguiente</button>
+    </div>
+  </div>
+</div>
+

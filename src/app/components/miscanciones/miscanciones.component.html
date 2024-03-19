@@ -1,0 +1,56 @@
+<div class="containercancion">
+  <div class="derCanciones">
+    <h2>lista de Video</h2>
+    <div class="entrada">
+      <ul class="ulinp">
+        <input
+          type="text"
+          placeholder="pega el link aquí"
+          [(ngModel)]="linkCopiado"
+        />
+      </ul>
+      <ul class="ulinp">
+        <input
+          type="text"
+          placeholder="Coloca el nombre de la canción"
+          [(ngModel)]="linkFiltrado"
+          class="inputes"
+        />
+      </ul>
+      <button (click)="agregarVideo()" class="boton">Agregar Cancion</button>
+    </div>
+    <!-- <div class="videosMuestra">
+      videos @for (item of nuevaCancion; track $index) {
+      {{ $index }}
+      <youtube-player
+        videoId="item.idCancion"
+        suggestedQuality="highres"
+        [height]="250"
+        [width]="500"
+        [startSeconds]="4"
+        [endSeconds]="8"
+      >
+      </youtube-player>
+      }
+    </div> -->
+  </div>
+
+</div>
+
+<!-- <div class="containercancion">
+  <div class="derCanciones">
+    <h2>lista de Video</h2>
+    <div class="entrada">
+      <input
+        type="text"
+        placeholder="Nueva cancion"
+        [(ngModel)]="nuevaCancion"
+      />
+
+      <button (click)="agregarCancion()" class="boton agregar">agregar</button>
+    </div>
+
+  
+
+</div>
+</div> -->

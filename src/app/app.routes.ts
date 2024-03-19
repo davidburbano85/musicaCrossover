@@ -3,20 +3,24 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path:"miscanciones",
-        loadComponent: () => import('./miscanciones/miscanciones.component').then(m=>m.MiscancionesComponent)
+        loadComponent: () => import('./components/miscanciones/miscanciones.component').then(m=>m.MiscancionesComponent)
     },
  
     {
         path:"pedidos",
-        loadComponent: () => import('./pedidos/pedidos.component').then(m=>m.PedidosComponent)
+        loadComponent: () => import('./components/pedidos/pedidos.component').then(m=>m.PedidosComponent)
     },
     {
         path:"videosyt",
-        loadComponent: () => import('./videosyt/videosyt.component').then(m=>m.VideosytComponent)
+        loadComponent: () => import('./components/videosyt/videosyt.component').then(m=>m.VideosytComponent)
+    },
+    {
+    path:"passwords",
+    loadComponent: () => import('./components/passwords/passwords.component').then(m=>m.PasswordsComponent)
     },
     {
         path:"**",
-        loadComponent: () => import('./inicio/inicio.component').then(m=>m.InicioComponent)
+        loadComponent: () => import('./components/inicio/inicio.component').then(m=>m.InicioComponent)
     },
 
 

@@ -6,7 +6,7 @@
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",
-      "preLaunchTask": "npm: start",
+      "runtimeArgs": ["--ignore-certificate-errors","--disable-web-security","--user-data-dir=C:/Chrome dev session"],    
       "url": "http://localhost:4200/"
     }
   ]
